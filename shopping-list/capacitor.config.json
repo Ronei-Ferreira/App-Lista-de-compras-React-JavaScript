@@ -1,0 +1,6 @@
+{
+  "appId": "com.listacompras.app",
+  "appName": "Shopping List Ronei e Laís",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
