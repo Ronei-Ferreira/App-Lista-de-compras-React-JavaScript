@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+  /* 📸 SUA IMAGEM MANTIDA */
+  background-image: url(../src/assets/WhatsApp\ Image\ 2026-05-21\ at\ 22.18.17.jpeg);
+
+  background-size: cover;
+  background-position: 30% center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 18px;
+}
+
+/* 🌑 overlay elegante */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.58);
+  z-index: -1;
+}
+
+/* 🧊 CONTAINER */
+.app {
+  width: 100%;
+  max-width: 440px;
+
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(18px);
+
+  border-radius: 24px;
+  padding: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: white;
+}
+
+/* 🏷️ TÍTULO DOURADO PREMIUM */
+h1 {
+  text-align: center;
+  margin-bottom: 14px;
+
+  font-size: 1.6rem;
+  font-weight: 800;
+
+  color: #facc15;
+
+  text-shadow: 0 2px 12px rgba(250, 204, 21, 0.45);
+}
+
+/* 💰 TOTAL */
+h2 {
+  text-align: center;
+  margin: 10px 0;
+
+  color: #fbbf24;
+  font-size: 1.2rem;
+}
+
+/* =========================
+   📦 INPUTS PADRÃO
+========================= */
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+
+  border: none;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
+
+  font-size: 1rem;
+
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+select option {
+  color: black;
+}
+
+/* =========================
+   📷 SCANNER LARANJA FOGO
+========================= */
+
+.scan-btn {
+  width: 100%;
+  padding: 18px;
+  margin: 12px 0;
+
+  border: none;
+  border-radius: 16px;
+
+  font-size: 1.05rem;
+  font-weight: 800;
+
+  background: linear-gradient(135deg, #ff4500, #ff8c00);
+  color: white;
+
+  box-shadow: 0 10px 25px rgba(255, 69, 0, 0.35);
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.scan-btn:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+   ➕ BOTÃO ADICIONAR GLASS
+========================= */
+
+.form button {
+  width: 100%;
+  padding: 14px;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.form button:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   🧭 FILTROS
+========================= */
+
+.filter {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.filter button {
+  flex: 1;
+  padding: 10px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+/* =========================
+   🛒 CARDS BRANCOS MODERNOS
+========================= */
+
+.item {
+  background: #ffffff;
+  color: #111827;
+
+  padding: 14px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+
+  transition: 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+.item h3 {
+  color: #111827;
+}
+
+.item p {
+  color: #6b7280;
+}
+
+.item.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+/* =========================
+   🔘 BOTÕES ITEM
+========================= */
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.buttons button {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 10px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.buttons button:first-child {
+  background: #10b981;
+  color: white;
+}
+
+.buttons button:last-child {
+  background: #ef4444;
+  color: white;
+}
+
+/* =========================
+   📱 RESPONSIVO
+========================= */
+
+@media (max-width: 500px) {
+  .app {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+}
